@@ -1,6 +1,67 @@
 <html>
-  <head></head>
-  <body>
-    <main></main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <h1>Force User Sign Up Form</h1>
+  </header>
+  <main>
+    <form action="http://requestb.in/1kdmfo81" method="post">
+      <fieldset>
+        <legend>Basic Info</legend>
+        <label for="fullName">Full Name</label><br>
+        <input id="fullName" name="Full Name" type="text" placeholder="Luke Skywalker" required><br>
+        <label for="profilePic">Profile Pic</label><br>
+        <input id="profilePic" name="Profile Pic" type="file"><br>
+        <label for="email">Email</label><br>
+        <input id="email" name="Email" type="email" placeholder="luke@sky.com" required><br>
+        <label for="side">Side</label><br>
+        <input id="side" type="radio" name="side" value="Light">Light
+        <input id="side" type="radio" name="side" value="Dark">Dark <br>
+        <label for="story">Origin Story</label><br>
+        <textarea id="story" name="Story" rows="5" cols="40" required></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Abilities</legend>
+        <label for="lightsaber">Lightsaber Color</label><br>
+        <select id="lightsaber" name="Lightsaber Color">
+          <option value="" disabled selected>Select Color</option>
+          <option value="blue">Blue</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="purple">Purple</option>
+        </select> <br>
+        <label for="levitateObjs">How many objects can you levitate at once?</label><br>
+        <input id="levitateObjs" name="Number" type="number" min="0"><br>
+        <label for="favAbility">Favorite Ability</label><br>
+        <input id="favAbility" name="Favorite Ability" type="text" placeholder="precognition"><br>
+        <label for="pilot">Pilot Experience</label><br>
+        <input id="pilot" type="checkbox" name="pilot1" value="Speeder">Speeder
+        <input id="pilot" type="checkbox" name="pilot2" value="Transport">Transport
+        <input id="pilot" type="checkbox" name="pilot3" value="X-wing">X-wing
+        <input id="pilot" type="checkbox" name="pilot4" value="TIE Fighter">TIE Fighter
+        <input id="pilot" type="checkbox" name="pilot5" value="Starship">Starship
+        <input id="pilot" type="checkbox" name="pilot6" value="Bantha">Bantha
+      </fieldset>
+      <fieldset>
+        <legend>Application Info</legend>
+        <label for="mentor">Desired Mentor</label><br>
+        <input id="mentor" name="Mentor" type="text" placeholder="Yoda"><br>
+        <label for="date">Application Date</label><br>
+        <input id="date" name="Date" type="date" required><br>
+        <label for="password">Applicaton Password</label><br>
+        <input id="password" name="Password" type="password" required><br>
+        <label for="darkSide">How do you get to the dark side?</label><br>
+        <textarea id="darkSide" name="Dark Side" rows="5" cols="40"></textarea><br><br>
+        <input type="submit" value="Apply">
+        <input type="reset" value="Start Over">
+      </fieldset><br>
+    </form>
+  </main>
+</body>
 </html>
